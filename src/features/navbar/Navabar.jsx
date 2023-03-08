@@ -1,31 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Navbar.css"
 
 
 const Navabar = () => {
+    const [ismobile, setIsmobile] = useState(false);
+
     return (
-        <nav className='navabr navbar-expand-lg bg-info p-3'>
-            <div className='container-fluid'>
-                <a className="navbar-brand" href="#">
-                    <img src="https://pixner.net/boleto/demo/assets/images/logo/logo.png"></img>
-                </a>
-                <div className='float-end'>
-                    <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
-                        <li className='nav-item p-2'>
-                            <a href='#'>Home</a>
-                        </li>
-                        <li className='nav-item p-2'>
-                            <a href='#'>Contact</a>
-                        </li>
-                        <button className='btn btn-outline-dark p-2'>Jion us</button>
-                    </ul>
+        <nav className="nav">
+            <div className='navbar_logo'>MovieBook</div>
+            <div  >
+                <ul className={!ismobile ? 'navbar_items' : "navbar_items_mobile"}
+                onClick={()=> setIsmobile(false)}
+                >
+                    <li className='navbar_items_li'>
+                        <a className='navbar_items_li_a' href='#'>Home</a>
+                    </li>
+                    <li className='navbar_items_li'>
+                        <a className='navbar_items_li_a' href='#'>contact</a>
+                    </li>
+                    <li className='navbar_items_li'>
+                        <a className='navbar_items_li_a' href='#'>About</a>
+                    </li>
+                    <li className='navbar_items_li'>
+                        <a className='navbar_items_li_a' href='#'>cart</a>
+                    </li>
+                    <button className='btn btn-outline-success mt-2 fw-bold Loginbtn'
+                    
+                    > LogIn</button>
+                   
 
+                </ul>
 
-
-                </div>
             </div>
+            <button
+                onClick={()=> !ismobile ? setIsmobile(true) : setIsmobile(false)}
+            > {!ismobile ? <i className="fas fa-bars" ></i> : <i className="fas fa-times"></i>}</button>
+            <div className='mobile'>
 
+               
 
+            </div>
         </nav>
     )
 }
