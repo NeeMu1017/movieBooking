@@ -32,11 +32,14 @@ const Navabar = () => {
                 </ul>
 
             </div>
+          
+            
+            <div className='mobile' >
+              
             <button
-                onClick={()=> !ismobile ? setIsmobile(true) : setIsmobile(false)}
-            > {!ismobile ? <i className="fas fa-bars" ></i> : <i className="fas fa-times"></i>}</button>
-            <div className='mobile'>
-
+                onClick={()=> !ismobile ? setIsmobile(true) : setIsmobile(false)} className='mobile'
+            > {!ismobile ? <i className="fas fa-bars butn" ></i> :
+             <i className="fas fa-times butn"></i>}</button> 
                
 
             </div>
