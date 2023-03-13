@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./Navbar.css"
 
 
-const Navabar = () => {
+const Navbar = () => {
     const [ismobile, setIsmobile] = useState(false);
 
     return (
@@ -47,4 +47,4 @@ const Navabar = () => {
     )
 }
 
-export default Navabar
+export default Navbar

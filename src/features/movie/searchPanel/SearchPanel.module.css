@@ -1,0 +1,69 @@
+.Container{
+    background-image: url("http://pixner.net/boleto/demo/assets/images/ticket/ticket-bg01.jpg");
+    background-repeat: no-repeat ;
+    padding: 0 20px 0 20px;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0 280px 0 250px;
+    flex-direction: column;
+    height: 250px;
+    
+      
+}
+
+.header1{
+    color: #31d7a9;
+    font-size: 20px;
+    padding-left: 4px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.header2{
+    color: #ffffff ;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    padding-left: 4px;
+}
+.searchBox{
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.836);
+    width: 100%;
+    padding:36px 20px  ;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.searchWrapper{
+    width: 25%;
+    border-bottom: 1px solid #ffffff;
+}
+
+.searchInput{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: large;
+    color: #ffffff;
+}
+.searchIcon{
+    color: white;
+}
+
+.searchInput::placeholder{
+    color: #ffffff;
+}
+
+.searchOption{
+    display: flex;
+    justify-content: center;
+    max-height: 45px;
+    margin-left: 12px;
+}
+.opotionLable{
+    color: #31d7a9;
+    font-size: 16px;
+    font-weight: 600;
+}
