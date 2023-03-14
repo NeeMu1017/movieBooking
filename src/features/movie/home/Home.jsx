@@ -1,10 +1,21 @@
+import { useEffect, useState } from "react"
 import Navbar from "../../navbar/Navbar"
 import { Banner } from "../banner/Banner"
+import { MovieCard } from "../moviecard/Moviecard"
 import { SearchPanel } from "../searchPanel/SearchPanel"
 
 import style from "./Home.module.css"
 
 export function Home() {
+    const [movies, setMovies] = useState([])
+    useEffect(() => {
+        fetch("http://localhost:4000/api/movie")
+            .then((res) => res.json())
+            .then(movies => {
+                setMovies(movies);
+            })
+    }, [])
+
     return (
         <div>
             <Navbar />
@@ -12,11 +23,20 @@ export function Home() {
                 <div>
                     <Banner />
                 </div>
+                <div className="mb-3">  <SearchPanel /></div>
 
-                <SearchPanel />
-                <div className="text-light">
-                    here movie grid
+
+                <div className="row">
+                    {
+                        movies.map(m => (
+                            <div key={m._id} className="col-md-2 ">
+                                <MovieCard key={m._id} movie ={m} />
+                            </div>
+                        ))
+                    }
                 </div>
+
+
             </div>
         </div>
     )

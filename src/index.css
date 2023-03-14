@@ -15,3 +15,13 @@ code {
   background-color: transparent !important;
   border: none !important;
 }
+.p-card-body{
+  background-color: #032055;
+  padding: 5px !important;
+}
+.p-card-title{
+  color: #fff;
+}
+.p-card-content{
+  padding: 0 !important;
+}
