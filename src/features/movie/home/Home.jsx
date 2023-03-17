@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 import Navbar from "../../navbar/Navbar"
 import { Banner } from "../banner/Banner"
 import { MovieCard } from "../moviecard/Moviecard"
@@ -30,7 +31,9 @@ export function Home() {
                     {
                         movies.map(m => (
                             <div key={m._id} className="col-md-2 ">
+                                <a href="/movie/1">
                                 <MovieCard key={m._id} movie ={m} />
+                                </a>
                             </div>
                         ))
                     }

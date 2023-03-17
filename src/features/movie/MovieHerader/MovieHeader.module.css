@@ -1,0 +1,42 @@
+.header{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+
+}
+.title{
+    font-size: 50px;
+    color: white;
+    font-weight: 700 !important;
+}
+.languages{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.btnGerers{
+    border: solid 1px rgb(163, 177, 198, 0.2);
+    border-radius: 18px;
+    background-color: transparent ;
+    color: #fff;
+
+    text-decoration: none;
+    padding: 8px 8px;
+    font-size: 15px;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+
+
+.dates{
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+
+}
