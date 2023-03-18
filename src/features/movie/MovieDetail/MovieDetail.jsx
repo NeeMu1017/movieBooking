@@ -1,60 +1,74 @@
 
 
+import { useEffect, useState } from "react";
 import Navbar from "../../navbar/Navbar";
 import MovieHeader from "../MovieHerader/MovieHeader";
 import styles from "./MovieDetail.module.css"
+import {useParams} from "react-router-dom"
 
 function MovieDetail() {
+    const [movie,setmovie] =useState({});
+    const  {id} =useParams()
+
+    useEffect(()=>{
+         async function callapi(){
+            const response = await fetch ("http://localhost:4000/api/movie/" + id)
+            const prerenponce =await response.json()
+            setmovie(prerenponce)
+         }
+         callapi();
+    },[id])
 
 
     return (
-        <div>
+        <div className={styles.body}>
             <Navbar />
-
-            <div className={styles.container}>
-                <section className={styles.header}>
-
-
-                    <div className={styles.container2}>
-                        <img src="https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg" className={styles.headerimg} />
+            <section>
+                <div className={styles.container1}>
+                    <div className={styles.delitails_banner}>
+                        <div >
+                            <img src={movie.posterUrl} alt="" className={styles.tum_img} />
+                        </div>
+                        <MovieHeader movie ={movie}/>
+                       
                     </div>
-                </section>
-                <section className={styles.movieheader}>
-                    <MovieHeader />
-                </section>
+                </div>
 
-                <section className={styles.banner}>
+            </section>
+            <section >
+                <div className={styles.banner}>                  
                     <div className={styles.container2}>
-                        <div className={styles.left_side_rating}>
-                            <div className={styles.items}>
-                                <div className={styles.items_tums}>
-                                    <img src="" alt="" />
-                                    <p>Tomatometer</p>
+                        <div className={styles.banner_item}>
+                            <div className={styles.item}>
+                                <div className={styles.header}>
+                                    <div className={styles.header_img}>
+                                        <img src="https://pixner.net/boleto/demo/assets/images/movie/tomato2.png" alt="" />
+                                    </div>
+                                    <div>88%</div>
                                 </div>
+                                <p>tomatometer</p>
+
                             </div>
-                            <div className={styles.items}>
-                                <div className={styles.items_tums}>
-                                    <img src="" alt="" />
-                                    <p>Tomatometer</p>
+                            <div className={styles.item}>
+                                <div className={styles.header}>
+                                    <div className={styles.header_img}>
+                                        <img src="	https://pixner.net/boleto/demo/assets/images/movie/cake2.png" alt="" />
+                                    </div>
+                                    <div>88%</div>
                                 </div>
-                            </div>
-                            <div className={styles.items}>
-                                <div className={styles.items_tums}>
-                                    <img src="" alt="" />
-                                    <p>Tomatometer</p>
-                                </div>
-                            </div><div className={styles.items}>
-                                <div className={styles.items_tums}>
-                                    <img src="" alt="" />
-                                    <p>Tomatometer</p>
-                                </div>
+                                <p>Audience Score</p>                               
                             </div>
                         </div>
-                        <button className={styles.btn1}>Book Show</button>
+                        <button className={styles.btn1} >Book tickets </button>
                     </div>
+                    
+                </div>
+                
+                
+                
+            </section>
 
-                </section>
-            </div>
+
         </div>
     )
 }

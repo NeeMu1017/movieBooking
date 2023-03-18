@@ -31,8 +31,11 @@ export function Home() {
                     {
                         movies.map(m => (
                             <div key={m._id} className="col-md-2 ">
-                                <a href="/movie/1">
+                                <Link to={`movie/${m._id}`}>
                                 <MovieCard key={m._id} movie ={m} />
+                                </Link>
+                                <a href="/movie/1">
+                                
                                 </a>
                             </div>
                         ))

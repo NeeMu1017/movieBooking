@@ -1,4 +1,100 @@
-.container {
+body {
+    background-color: #001232 !important;
+
+}
+
+.container1 {
+    height: 150px;
+
+    padding: 0 15px;
+    margin: 50px 453px 0px 453px;
+
+}
+
+
+.delitails_banner {
+    position: absolute;
+    display: flex;
+
+}
+.tum_img{
+    max-height: 450px;
+}
+.tum_detail {
+    width: 800px;
+    color: #fff;
+    margin: 15px 15px;
+
+}
+
+.dates {
+    display: flex;
+}
+
+.banner {
+    background-color: #17305f;
+    margin-top: 100pxs;
+}
+
+.banner_item{
+    display: flex;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin: 0px 25px;
+    padding: 15px;
+}
+.header{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.header_img{
+    margin-left: 5px;
+    margin-right: 10px;
+    height: 50px;
+}
+.item{
+    margin-left: 15px;
+}
+
+.container2{
+    margin-left: 800px;
+    margin-top: 70px;
+    display: flex;
+}
+
+.btn1 {
+    background-image: linear-gradient(90deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+    border-radius: 17px;
+    margin-left: 150px;
+    max-height: 50px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
     background-color: #001232;
     height: 100vh;
     display: flex;
@@ -70,4 +166,4 @@
     color: #fff;
     
 
-}
+} */
