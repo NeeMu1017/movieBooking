@@ -9,7 +9,7 @@ function MovieHeader({ movie }) {
                     {
                         movie.languages && movie.languages.map(l =>
                             <span className={styles.languages}>
-                                {movie.languages}
+                                {movie.languages},
                             </span >
                         )
                     }

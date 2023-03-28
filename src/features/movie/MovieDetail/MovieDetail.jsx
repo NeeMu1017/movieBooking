@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 import Navbar from "../../navbar/Navbar";
 import MovieHeader from "../MovieHerader/MovieHeader";
 import styles from "./MovieDetail.module.css"
-import {useParams} from "react-router-dom"
+import { useParams} from "react-router-dom"
 
 function MovieDetail() {
+    
     const [movie,setmovie] =useState({});
     const  {id} =useParams()
 
@@ -33,7 +34,7 @@ function MovieDetail() {
                        
                     </div>
                 </div>
-
+                
             </section>
             <section >
                 <div className={styles.banner}>                  
@@ -59,12 +60,14 @@ function MovieDetail() {
                                 <p>Audience Score</p>                               
                             </div>
                         </div>
-                        <button className={styles.btn1} >Book tickets </button>
+                    
                     </div>
+                    <a href={`${id}/ticketplan`} className={styles.btn1}>booking ticket</a>
                     
                 </div>
                 
-                
+
+               
                 
             </section>
 

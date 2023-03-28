@@ -13,7 +13,7 @@ const Navbar = () => {
                 onClick={()=> setIsmobile(false)}
                 >
                     <li className='navbar_items_li'>
-                        <a className='navbar_items_li_a' href='#'>Home</a>
+                        <a className='navbar_items_li_a' href='/'>Home</a>
                     </li>
                     <li className='navbar_items_li'>
                         <a className='navbar_items_li_a' href='#'>contact</a>

@@ -1,0 +1,87 @@
+.container{
+    color: #fff;
+}
+
+.banner{
+    background-color: #032055;
+    height: 150px;
+    border-bottom: #17305f;
+    border-top: #17305f;
+    margin-top: 200px;
+    align-items: center;
+    padding: 30px 80px 30px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ticketplan{
+    margin: 120px;
+}
+.tp_ul{
+    
+    background-color: #032055;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.tp_li{
+    display: flex;
+    border-bottom: solid 1px #17305f;
+}
+.tp_cinema{
+    padding: 25px;
+    height: 37%;
+    width: 350px;
+    justify-content: space-around;
+    border-right: solid 1px #17305f;
+    align-items: center;
+    display: flex;
+}
+
+.tp_time{
+    display: flex;
+   justify-content: space-around;
+    padding: 30px;
+    height: 37%;
+    width: 600px;
+}
+
+.tp_ctnm{
+    margin-right: 100px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.namemm_tp{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.tp_lang{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+.tp_head{
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.tp_tti{
+    background-image: url("https://pixner.net/boleto/demo/assets/css/img/movie-seat.png");
+    width: 100px;
+    height:50px ;
+    padding: 10px;
+    text-align: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+    
+}
+.tp_tti:hover{
+    background: aquamarine;
+}

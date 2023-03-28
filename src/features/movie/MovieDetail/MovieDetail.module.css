@@ -11,6 +11,13 @@ body {
 
 }
 
+.booking{
+    background-color: #032055;
+    padding: 47px 0;
+    margin-top: 80px;
+    border-top: solid 1px #17305f ;
+    border-bottom: solid 1p;
+}
 
 .delitails_banner {
     position: absolute;
@@ -33,12 +40,13 @@ body {
 
 .banner {
     background-color: #17305f;
-    margin-top: 100pxs;
+    margin-top: 100px;
 }
 
 .banner_item{
     display: flex;
     color: #fff;
+    justify-content: space-between;
     text-transform: capitalize;
     font-size: 18px;
     margin: 0px 25px;
@@ -59,8 +67,7 @@ body {
 }
 
 .container2{
-    margin-left: 800px;
-    margin-top: 70px;
+    margin: 0px 750px;
     display: flex;
 }
 
@@ -74,8 +81,10 @@ body {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
-    align-items: center;
-    
+   text-align: center;
+   float: right;
+   padding: 5px;
+   text-decoration: none;
 }
 
 
