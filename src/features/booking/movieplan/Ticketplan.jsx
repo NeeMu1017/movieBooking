@@ -81,7 +81,7 @@ function Ticketplan() {
                                             <div className={styles.tp_time}>
                                                 {
                                                     c.timings.map(t => (
-                                                        <Link to={"/seatplan"}>
+                                                        <Link to={`/seatplan`}>
                                                         <div className={styles.tp_tti}>{t.time}</div>
                                                         </Link>
                                                     ))

@@ -1,5 +1,4 @@
-
-.bg_sp{
+.bg_sp {
     padding: 112px 0 80px 0;
     display: flex;
     align-items: center;
@@ -10,7 +9,7 @@
     height: 500px;
 }
 
-.header_sp{
+.header_sp {
     color: #fff;
     align-items: center;
     font-size: 70px;
@@ -18,12 +17,12 @@
     text-transform: uppercase;
 }
 
-.plase_sp{
-    font-size:22px;
+.plase_sp {
+    font-size: 22px;
     font-weight: 400;
 }
 
-.banner_sp{
+.banner_sp {
     width: 100%;
     background-color: #032055;
     height: 15vh;
@@ -32,28 +31,110 @@
     color: #fff;
     display: flex;
     align-items: center;
-    
+
 }
 
-.bannerItems_sp{
+.bannerItems_sp {
     margin: 20px;
     list-style: none;
     display: flex;
     justify-content: space-between;
-   align-items: centers;
-   flex-direction:row ;
+    
+    flex-direction: row;
+    text-transform: capitalize;
 }
 
-.itemsList_sp{
+.itemsList_sp {
     margin-top: 25px;
 }
 
-.Back_button{
+.Back_button {
     height: 50px;
     width: 100px;
     border: none;
     border-radius: 15px;
     text-transform: capitalize;
-    background:linear-gradient(90deg, #5560ff 17%,#aa52a1 63% ,#ff4343) ;
-    font-weight:600;
+    background: linear-gradient(90deg, #5560ff 17%, #aa52a1 63%, #ff4343);
+    font-weight: 600;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.itemsListdate_sp {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.screen_area {
+    margin: 100px 0 100px;
+    
+    
+    color: #fff;
+}
+
+.screen {
+    margin: 0 500px 0px 500px;
+    
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.screen_before{
+    color: #fff;
+    height: 1px;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.screen_after{
+    color: #fff;
+    height: 1px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.screen_img{
+    margin-left: 7%;
+}
+
+.screen_text{
+    color: #31d7a3;
+    margin: 0 500px 0px 500px;
+    
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.steet_sp{
+    color: #fff;
+    
+}
+
+.steet_sp ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    max-height: 40px;
+    
+}
+
+.steet_sp li{
+    max-height: 40px;
+}
+
+.flooter{
+    
+    height: 200px;
+}
+
+.booksummmary{
+    
+    margin: 8% 5% ;
 }

@@ -1,0 +1,53 @@
+.banner_bs{
+    background-image: url("https://pixner.net/boleto/demo/assets/images/movie/movie-bg-proceed.jpg");
+    
+    color: #fff;
+    height:15vh ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.procced_bs{
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(90deg, #5560ff , #aa52a1,#ff4343);
+    color: #fff;
+    height: 55px;
+    width: 160px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.procced_bs{
+    font: 400;
+    font-size: 1.2rem;
+}
+
+.price_bs h2{
+color: #31d7a9;
+font-weight: 700;
+}
+
+.price_bs p{
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.seateno_bs{
+    margin-left: 30px;
+}
+
+.seateno_bs h3{
+    color: #31d7a9;
+    font-weight: 700;
+}
+
+.seateno_bs p{
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
